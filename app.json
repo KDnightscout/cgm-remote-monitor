@@ -52,24 +52,29 @@
       "value": "",
       "required": true
     },
+    "AUTH_DEFAULT_ROLES": {
+      "description": "Ref https://github.com/pazaan/600SeriesAndroidUploader/wiki/Prerequisites",
+      "value": "readable devicestatus-upload",
+      "required": false
+    },
     "BG_HIGH": {
       "description": "Urgent High BG threshold, triggers the ALARM_URGENT_HIGH alarm. Set in mg/dL or mmol/L, as set in DISPLAY_UNITS variable.",
-      "value": "260",
+      "value": "12.0",
       "required": false
     },
     "BG_LOW": {
       "description": "Urgent Low BG threshold, triggers the ALARM_URGENT_LOW alarm. Set in mg/dL or mmol/L, as set in DISPLAY_UNITS variable.",
-      "value": "55",
+      "value": "4.0",
       "required": false
     },
     "BG_TARGET_BOTTOM": {
       "description": "Low BG threshold, triggers the ALARM_LOW alarm. Set in mg/dL or mmol/L, as set in DISPLAY_UNITS variable.",
-      "value": "80",
+      "value": "4.0",
       "required": false
     },
     "BG_TARGET_TOP": {
       "description": "High BG threshold, triggers the ALARM_HIGH alarm. Set in mg/dL or mmol/L, as set in DISPLAY_UNITS variable.",
-      "value": "180",
+      "value": "12.0",
       "required": false
     },
     "BRIDGE_PASSWORD": {
@@ -94,12 +99,12 @@
     },
     "DISPLAY_UNITS": {
       "description": "Preferred BG units for the site: 'mg/dl' or 'mmol/L' (or just 'mmol').",
-      "value": "mg/dl",
+      "value": "mmol",
       "required": true
     },
     "ENABLE": {
       "description": "Plugins to enable for your site. Must be a space-delimited, lower-case list. Include the word 'bridge' here if you are receiving data from the Dexcom Share service. Include 'mmconnect' if you are bridging from the MiniMed CareLink service.",
-      "value": "careportal basal",
+      "value": "careportal basal rawbg cob iob cage bwp upbat sage pump",
       "required": false
     },
     "MMCONNECT_USER_NAME": {
